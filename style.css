@@ -193,7 +193,7 @@ nav ul li a {
   header {
     position: fixed;
     height: 78px;
-    /* box-shadow: 0px 3px 6px #fff; */
+    box-shadow: 0px 3px 6px #fff;
     z-index: 99;
   }
 
@@ -444,9 +444,9 @@ nav ul li a {
   }
 
   .instruction p {
-    font-size: 14px;
-    line-height: 32px;
-    margin-top: 20px;
+    font-size: 18px;
+    line-height: 24px;
+    margin-top: 120px;
   }
 
   .product-links-h3 {
@@ -531,227 +531,6 @@ nav ul li a {
   }
 
 }
-
-
-
-
-/* AGRICULTURE PAGE */
-
-.agriculture-banner {
-  width: 100%;
-  height: 150px;
-  object-fit: cover;
-}
-
-.page-title {
-  font-family: Garamond;
-  font-size: 22px;
-  font-weight: 600;
-  color: #0B77BA;
-  font-style: italic;
-  text-align: left;
-  margin-top: 50px;
-  margin-bottom: 30px;
-  margin-left: 15%;
-}
-
-.page-line {
-  border-bottom: 1px solid #F6ED24;
-  display: block;
-  margin: 0 auto;
-  width: 80%;
-  margin-top: 5px;
-}
-
-.agriculture-intro {
-  margin: 30px 15%;
-  font-family: Garamond;
-  font-size: 16px;
-  font-weight: 300;
-  color: #0B77BA;
-  text-align: center;
-  line-height: 20px;
-  text-shadow: 2px 2px 1px #d3d3d3;
-}
-
-.contact-link-h4 {
-  font-family: Roboto;
-  font-size: 10px;
-  font-weight: 300;
-  color: #0B77BA;
-  text-align: center;
-  line-height: 20px;
-  text-shadow: 1px 2px 2px #d3d3d3;
-  margin-top: 20px;
-}
-
-.contact-link-h4 a {
-  font-family: Roboto;
-  font-size: 10px;
-  font-weight: 300;
-  color: #0B77BA;
-  text-align: center;
-  line-height: 20px;
-  font-style: italic;
-  text-decoration: underline;
-  margin-top: 10px;
-}
-
-.sample-instruction {
-  font-family: Roboto;
-  font-size: 12px;
-  font-weight: 400;
-  text-style: italic;
-  line-height: 5px;
-  color: #0B77BA;
-  text-align: center;
-  margin: 40px 0;
-}
-
-
-.product-thumb {
-  margin: 30px 10% 80px;
-}
-
-.product-type {
-  font-family: Roboto;
-  font-size: 16px;
-  font-weight: 300;
-  text-decoration: underline;
-  line-height: 5px;
-  color: #0B77BA;
-  text-align: left;
-  display: block;
-  margin-bottom: 20px;
-}
-
-.pe-raschel {
-  display: flex;
-  flex-flow: row wrap;
-  align-items: flex-start;
-}
-
-.pe-raschel a {
-  padding-right: 20px;
-  padding-bottom: 20px;
-}
-
-.thumb {
-  max-width: 50px;
-  border: solid 2px #0B77BA;
-}
-
-.lightbox {
-  position: fixed;
-  z-index: 999;
-  height: 0;
-  width: 0;
-  top: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.8);
-  opacity: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.image-box {
-  position: absolute;
-  align-self: center;
-  justify-content: center;
-}
-
-.lightbox .image-box .main-img {
-  max-width: 90%;
-  opacity: 0;
-  padding-left: 5%;
-}
-
-
-.lightbox:target {
-  /*Remove default browser outline */
-  outline: none;
-  width: 100%;
-  height: 100%;
-  opacity: 1 !important;
-}
-
-.lightbox:target .main-img {
-    opacity: 1;
-    webkit-transition: opacity 0.6s;
-    transition: opacity 0.6s;
-}
-
-
-.light-btn {
-    /* padding: 5px 15px; */
-    cursor: pointer;
-    z-index: 99;
-}
-
-/*
-.light-btn:hover {
-    background-color: #111;
-}
-*/
-
-.btn-prev img {
-  max-width: 14px;
-  left: 10%;
-  position: absolute;
-  top: 49%;
-}
-
-.btn-next img {
-  max-width: 14px;
-  right: 10%;
-  position: absolute;
-  top: 49%;
-}
-
-.btn-close img {
-  max-width: 20px;
-  position: absolute;
-  right: 10%;
-  top: 10%;
-  text-decoration: none;
-}
-
-.image-description {
-  font-family: Roboto;
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 5px;
-  color: #0B77BA;
-  text-align: center;
-  display: block;
-  padding: 20px;
-  /* z-index: 99; */
-  background-color: rgba(0,0, 0, 0.75);
-  width: 250px;
-  position: absolute;
-  top: 80%;
-}
-
-/*
-.btn-close:hover {
-    background-color: #740404;
- }
- */
-
- .agriculture-footer {
-   width: 100%;
-   height: 200px;
-   background-image: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,0.2) 80%, rgba(255,255,255,0) 100%), url('img/agriculture-footer.jpg');
-   background-image: -moz-linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,0.2) 80%, rgba(255,255,255,0) 100%), url('img/agriculture-footer.jpg');
-   background-image: -webkit-linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,0.2) 80%, rgba(255,255,255,0) 100%), url('img/agriculture.jpg');
-   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 );
-   background-repeat: no-repeat;
-   background-position: center;
-   background-size: cover;
-   display: block;
- }
-
 
 
 /* FOOTER */

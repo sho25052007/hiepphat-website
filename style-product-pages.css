@@ -1,0 +1,789 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height: 0;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+
+
+
+
+
+
+
+/*MY CODE*/
+*{
+  text-decoration: none;
+}
+
+header {
+  width: 100%;
+  background-color: #fff;
+}
+
+
+header .header-brand {
+  width: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+}
+
+#logo {
+  width: 95px;
+  margin: 0 auto;
+  /* align-items: center; */
+  padding: 10px 0;
+}
+
+#text {
+  width: 225px;
+  margin: 0 auto;
+  /* align-items: center; */
+  padding: 10px 20px;
+}
+
+
+.sticky-nav {
+  background-color: #fff;
+  box-shadow: 0px 3px 6px #fff;
+  height: 30px;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 99;
+}
+
+nav ul {
+  padding-top: 10px;
+  display: block;
+  margin: 10px auto;
+  width: fit-content;
+}
+
+nav ul li {
+  display: inline-block;
+  float: left;
+  list-style: none;
+  position: relative;
+}
+
+nav ul li ul {
+  display: none;
+}
+
+nav ul li a {
+  padding: 7px 16px;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 600;
+  color: #0B77BA;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: block;
+}
+
+#down-arrow {
+  display: none;
+}
+
+
+@media only screen and (min-width: 1000px) {
+  main {
+    padding-top: 78px;
+    padding-bottom: 120px;
+  }
+
+  .wrapper {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  header {
+    position: fixed;
+    height: 78px;
+    box-shadow: 0px 3px 6px #fff;
+    z-index: 99;
+  }
+
+  header .header-brand {
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    width: 60%;
+    position: absolute;
+  }
+
+  .logo-header .header-brand {
+    float: left;
+  }
+
+  #logo {
+    width: 50px;
+    padding: 10px 0 10px 40px;
+    margin: 0;
+    float: left;
+  }
+
+  #text {
+    height: 40px;
+    padding: 20px 20px;
+    margin: 0;
+    float: left;
+  }
+
+  .sticky-nav {
+    width: 100%;
+    position: fixed;
+    height: 0;
+    box-shadow: 0;
+    float: right;
+    margin-top: 7px;
+    z-index: 99;
+  }
+
+  nav ul {
+    padding-right: 10%;
+    margin: 22px auto;
+    padding-top: 0;
+    float: right;
+    display: inline-block;
+  }
+
+  nav ul li {
+    position: relative;
+    padding: 0 25px;
+  }
+
+  nav ul li a {
+    padding: 5px 5px 0;
+    display: table;
+    border: 1px solid #F6ED24;
+    border-spacing: 5px;
+  }
+
+  nav ul li ul {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 0px 0px 4px 4px;
+    display: block;
+    margin: 0;
+
+    /* hover effect for website*/
+    height: 0px;
+    overflow: hidden;
+    transition: height 0.5s ease-in-out;
+    -webkit-transition: height 0.5s ease-in-out;
+    -moz-transition: height 0.5s ease-in-out;
+    -o-transition: height 0.5s ease-in-out;
+  }
+
+  nav ul li:hover ul {
+    display: block;
+    height: 115px;
+    padding-top: 20px;
+  }
+
+  nav ul li ul li {
+    width: 120px;
+    border-radius: 4px;
+  }
+
+  nav ul li ul li a {
+    padding: 10px 0;
+    border: none;
+  }
+
+  nav ul li ul li:hover a{
+    text-decoration: underline;
+  }
+
+  #down-arrow {
+    display: block;
+    width: 20px;
+    margin: 6px auto;
+  }
+}
+
+
+/* AGRICULTURE PAGE */
+
+.agriculture-banner {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.page-title {
+  font-family: Garamond;
+  font-size: 22px;
+  font-weight: 600;
+  color: #0B77BA;
+  font-style: italic;
+  text-align: left;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  margin-left: 15%;
+}
+
+.page-line {
+  border-bottom: 1px solid #F6ED24;
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+  margin-top: 5px;
+}
+
+.agriculture-intro {
+  margin: 30px 15%;
+  font-family: Garamond;
+  font-size: 16px;
+  font-weight: 300;
+  color: #0B77BA;
+  text-align: center;
+  line-height: 20px;
+  text-shadow: 2px 2px 1px #d3d3d3;
+}
+
+.contact-link-h4 {
+  font-family: Roboto;
+  font-size: 10px;
+  font-weight: 300;
+  color: #0B77BA;
+  text-align: center;
+  line-height: 20px;
+  text-shadow: 1px 2px 2px #d3d3d3;
+  margin-top: 20px;
+}
+
+.contact-link-h4 a {
+  font-style: italic;
+  text-decoration: underline;
+}
+
+.sample-instruction {
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 400;
+  text-style: italic;
+  line-height: 5px;
+  color: #0B77BA;
+  text-align: center;
+  margin: 40px 0;
+}
+
+
+.product-type {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 300;
+  text-decoration: underline;
+  line-height: 5px;
+  color: #0B77BA;
+  text-align: left;
+  display: block;
+  margin: 0 15%;
+}
+
+/* THUMB GRID */
+
+/* SETTING GRID AREA */
+.black-1mm {grid-area: img-1;}
+.green-1mm {grid-area: img-2;}
+.white-1mm {grid-area: img-3;}
+.sub-text-1mm {grid-area: text-1;}
+
+.black-2mm {grid-area: img-4;}
+.blue-2mm {grid-area: img-5;}
+.white-2mm {grid-area: img-6;}
+.sub-text-2mm {grid-area: text-2;}
+
+.black-3mm {grid-area: img-7;}
+.sub-text-3mm {grid-area: text-3;}
+
+.blue-4mm {grid-area: img-8;}
+.white-4mm {grid-area: img-9;}
+.sub-text-4mm {grid-area: text-4;}
+
+.blue-6mm {grid-area: img-10;}
+.white-6mm {grid-area: img-11;}
+.sub-text-6mm {grid-area: text-5;}
+
+.green-16mm {grid-area: img-12;}
+.sub-text-16mm {grid-area: text-6;}
+
+.black-50 {grid-area: img-13;}
+.grey-50 {grid-area: img-14;}
+.sub-text-50 {grid-area: text-7;}
+
+.black-65 {grid-area: img-15;}
+.grey-65 {grid-area: img-16;}
+.sub-text-65 {grid-area: text-8;}
+
+.black-75 {grid-area: img-17;}
+.grey-75 {grid-area: img-18;}
+.sub-text-75 {grid-area: text-9;}
+
+.black-85 {grid-area: img-19;}
+.sub-text-85 {grid-area: text-10;}
+
+.bag {grid-area: img-20;}
+.roll {grid-area: img-21;}
+
+/* parent grid */
+.pe-raschel-section {
+  margin: 30px 15% 80px;
+  display: grid;
+  grid-gap: 20px 10px;
+
+  grid-template-columns: repeat(4, 1fr);
+  /* grid-template-rows: repeat(4, 1fr); */
+  grid-auto-rows: minmax(50px, auto);
+
+  grid-template-areas:
+    "img-1 img-2 img-3 text-1"
+    "img-4 img-5 img-6 text-2"
+    "img-7 . . text-3"
+    "img-8 img-9 . text-4"
+    "img-10 img-11 . text-5"
+    "img-12 . . text-6"
+}
+
+.shade-net-section {
+  margin: 30px 15% 80px;
+  display: grid;
+  grid-gap: 20px 10px;
+
+  grid-template-columns: repeat(4, 1fr);
+  /* grid-template-rows: repeat(4, 1fr); */
+  grid-auto-rows: minmax(50px, auto);
+
+  grid-template-areas:
+"img-13 img-14 . text-7"
+"img-15 img-16 . text-8"
+"img-17 img-18 . text-9"
+"img-19 . . text-10";
+}
+
+.net-product-section {
+  margin: 30px 15% 80px;
+  display: grid;
+  grid-gap: 20px 10px;
+
+  grid-template-columns: repeat(4, 1fr);
+  /* grid-template-rows: repeat(4, 1fr); */
+  grid-auto-rows: minmax(50px, auto);
+
+  grid-template-areas:
+    "img-20 img-21 . .";
+}
+
+/* child grid > img*/
+.thumb-img {
+  border: solid 2px #0B77BA;
+  object-fit: cover;
+  object-position: 50% 50%;
+  width: 100%;
+  height: 100%;
+}
+
+.product-size {
+  font-family: Roboto;
+  font-weight: 300;
+  color: #0B77BA;
+
+  line-height: 80%;
+  text-align: center;
+  font-style: italic;
+
+  place-self: center end;
+
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
+
+
+/* LIGHTBOX GALLERY */
+.lightbox {
+  position: fixed;
+  z-index: 999;
+  height: 0;
+  width: 0;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-box {
+  position: absolute;
+  align-self: center;
+  justify-content: center;
+}
+
+.lightbox .image-box .main-img {
+  max-width: 90%;
+  opacity: 0;
+  padding-left: 5%;
+}
+
+
+.lightbox:target {
+  /*Remove default browser outline */
+  outline: none;
+  width: 100%;
+  height: 100%;
+  opacity: 1 !important;
+}
+
+.lightbox:target .main-img {
+    opacity: 1;
+    webkit-transition: opacity 0.6s;
+    transition: opacity 0.6s;
+}
+
+
+.light-btn {
+    cursor: pointer;
+    z-index: 99;
+}
+
+
+.btn-prev img {
+  max-width: 14px;
+  left: 10%;
+  position: absolute;
+  top: 49%;
+}
+
+.btn-next img {
+  max-width: 14px;
+  right: 10%;
+  position: absolute;
+  top: 49%;
+}
+
+.btn-close img {
+  max-width: 20px;
+  position: absolute;
+  right: 10%;
+  top: 10%;
+  text-decoration: none;
+}
+
+.image-description {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 5px;
+  color: #0B77BA;
+  text-align: center;
+  display: block;
+  padding: 20px;
+  background-color: rgba(0,0, 0, 0.75);
+  width: 250px;
+  position: absolute;
+  top: 80%;
+}
+
+
+@media only screen and (min-width: 1000px) {
+  .agriculture-banner {
+    height: 400px;
+  }
+
+  .page-title {
+    font-size: 40px;
+    margin-top: 60px;
+    margin-bottom: 40px;
+  }
+
+  .agriculture-intro {
+    font-size: 32px;
+    line-height: 40px;
+    margin: 50px 15%;
+  }
+
+  .contact-link-h4 {
+    font-size: 22px;
+    line-height: 20px;
+    margin-top: 60px;
+  }
+
+  .sample-instruction {
+    font-size: 18px;
+    line-height: 24px;
+    margin-top: 120px;
+  }
+
+
+  .product-type {
+    font-size: 22px;
+    line-height: 30px;
+    margin-top: 80px;
+  }
+
+
+  .pe-raschel-section {
+    grid-gap: 40px 20px;
+  }
+
+  .shade-net-section {
+    grid-gap: 40px 20px;
+  }
+
+  .net-product-section {
+    grid-gap: 40px 20px;
+  }
+
+  .thumb-img {
+    border: solid 4px #0B77BA;
+    cursor: pointer;
+
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+  }
+
+  .thumb-img:hover, .thumb-img:focus {
+    border: 4px solid #F6ED24;
+    opacity: 0.75;
+
+    transform: scale(0.98);
+    -ms-transform: scale(0.98);
+    -moz-transform: scale(0.98);
+    -webkit-transform: scale(0.98);
+    -o-transform: scale(0.98);
+  }
+
+  .product-size {
+    line-height: 100%;
+    font-size: 22px;
+  }
+
+  .lightbox .image-box .main-img {
+    max-width: 60%;
+    max-height: 50% !important;
+    padding: 25% 20%;
+  }
+
+  .btn-prev img {
+    max-width: 28px;
+    left: 25%;
+    position: absolute;
+    top: 49%;
+  }
+
+  .btn-next img {
+    max-width: 28px;
+    right: 25%;
+    position: absolute;
+    top: 49%;
+  }
+
+  .btn-close img {
+    max-width: 40px;
+    position: absolute;
+    right: 25%;
+    top: 10%;
+    text-decoration: none;
+  }
+
+  .image-description {
+    font-size: 24px;
+    line-height: 10px;
+    padding: 30px;
+    width: 360px;
+  }
+
+}
+
+/* PRODUCT PAGE FOOTER */
+
+.footer-line {
+  border-bottom: 1px solid #F6ED24;
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+  margin-top: 20px;
+}
+
+footer {
+  width: 100%;
+  background-color: #fff;
+  /* display: block; */
+}
+
+.quick-contact-footer {
+    padding: 20px 0;
+}
+
+.contact-info {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  align-items: flex-start;
+  padding: 0 15%;
+}
+
+.contact-info h3 {
+  padding-bottom: 5px;
+  font-family: Garamond;
+  font-size: 24px;
+  font-weight: 300;
+  color: #0B77BA;
+  line-height: 30px;
+}
+
+
+.contact-info h4 {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  color: #0B77BA;
+  line-height: 30px;
+  flex-basis: 20%;
+}
+
+.contact-info p {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 300;
+  color: #0B77BA;
+  line-height: 30px;
+  flex-shrink: 1;
+}
+
+.footer-banner {
+  display: none;
+}
+
+@media only screen and (min-width: 1000px) {
+  .footer-line {
+    display: none;
+  }
+
+  .contact-info {
+    display: none;
+  }
+
+  .agriculture-footer {
+    width: 100%;
+    height: 400px;
+    background-image: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,0.2) 80%, rgba(255,255,255,0) 100%), url('img/agriculture-footer.jpg');
+    background-image: -moz-linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,0.2) 80%, rgba(255,255,255,0) 100%), url('img/agriculture-footer.jpg');
+    background-image: -webkit-linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,0.2) 80%, rgba(255,255,255,0) 100%), url('img/agriculture.jpg');
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 );
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: block;
+  }
+}
