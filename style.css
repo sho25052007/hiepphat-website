@@ -5,7 +5,6 @@ Last Updated: 2010-09-17
 Author: Richard Clark - http://richclarkdesign.com
 Twitter: @rich_clark
 */
-
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code,
@@ -18,98 +17,91 @@ table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section, summary,
 time, mark, audio, video {
-    margin:0;
-    padding:0;
-    border:0;
-    outline:0;
-    font-size:100%;
-    vertical-align:baseline;
-    background:transparent;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
 }
 
 body {
-    line-height: 0;
+  line-height: 0;
 }
 
-article,aside,details,figcaption,figure,
-footer,header,hgroup,menu,nav,section {
-    display:block;
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
 }
 
 nav ul {
-    list-style:none;
+  list-style: none;
 }
 
 blockquote, q {
-    quotes:none;
+  quotes: none;
 }
 
 blockquote:before, blockquote:after,
 q:before, q:after {
-    content:'';
-    content:none;
+  content: '';
+  content: none;
 }
 
 a {
-    margin:0;
-    padding:0;
-    font-size:100%;
-    vertical-align:baseline;
-    background:transparent;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
 }
 
 /* change colours to suit your needs */
 ins {
-    background-color:#ff9;
-    color:#000;
-    text-decoration:none;
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
 }
 
 /* change colours to suit your needs */
 mark {
-    background-color:#ff9;
-    color:#000;
-    font-style:italic;
-    font-weight:bold;
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
 }
 
 del {
-    text-decoration: line-through;
+  text-decoration: line-through;
 }
 
 abbr[title], dfn[title] {
-    border-bottom:1px dotted;
-    cursor:help;
+  border-bottom: 1px dotted;
+  cursor: help;
 }
 
 table {
-    border-collapse:collapse;
-    border-spacing:0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /* change border colour to suit your needs */
 hr {
-    display:block;
-    height:1px;
-    border:0;
-    border-top:1px solid #cccccc;
-    margin:1em 0;
-    padding:0;
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
 }
 
 input, select {
-    vertical-align:middle;
+  vertical-align: middle;
 }
 
-
-
-
-
-
-
-
 /*MY CODE*/
-*{
+* {
   text-decoration: none;
 }
 
@@ -117,7 +109,6 @@ header {
   width: 100%;
   background-color: #fff;
 }
-
 
 header .header-brand {
   width: 100%;
@@ -139,7 +130,6 @@ header .header-brand {
   /* align-items: center; */
   padding: 10px 20px;
 }
-
 
 .sticky-nav {
   background-color: #fff;
@@ -183,7 +173,6 @@ nav ul li a {
 #down-arrow {
   display: none;
 }
-
 
 @media only screen and (min-width: 1000px) {
   main {
@@ -260,7 +249,6 @@ nav ul li a {
     border-radius: 0px 0px 4px 4px;
     display: block;
     margin: 0;
-
     /* hover effect for website*/
     height: 0px;
     overflow: hidden;
@@ -286,7 +274,7 @@ nav ul li a {
     border: none;
   }
 
-  nav ul li ul li:hover a{
+  nav ul li ul li:hover a {
     text-decoration: underline;
   }
 
@@ -297,10 +285,7 @@ nav ul li a {
   }
 }
 
-
-
 /* INDEX*/
-
 .index-banner {
   width: 100%;
   height: 150px;
@@ -359,9 +344,7 @@ nav ul li a {
   text-align: center;
 }
 
-
 /* PRODUCT LINKS IMAGES */
-
 .product-links {
   padding-top: 20px;
   display: flex;
@@ -399,20 +382,20 @@ nav ul li a {
 .agriculture {
   background-image: url(img/agriculture.jpg);
 }
+
 .construction {
   background-image: url(img/construction.jpg);
 }
+
 .aquaculture {
   background-image: url(img/aquaculture.jpg);
 }
-
 
 @media only screen and (min-width: 500px) {
   .product-link {
     height: 200px;
   }
 }
-
 
 @media only screen and (min-width: 1000px) {
   .wrapper {
@@ -476,9 +459,8 @@ nav ul li a {
   }
 
   /* PRODUCT LINKs IMAGES */
-
-.link-text {
-  display: none;
+  .link-text {
+    display: none;
     font-family: Garamond;
     font-size: 40px;
     font-weight: 600;
@@ -519,11 +501,9 @@ nav ul li a {
     position: absolute;
     top: 0;
     left: 0;
-    background-color: rgba(255,255,255,0.75);
+    background-color: rgba(255, 255, 255, 0.75);
   }
-
 }
-
 
 /* FOOTER */
 .footer-line {
@@ -541,7 +521,7 @@ footer {
 }
 
 .quick-contact-footer {
-    padding: 20px 0;
+  padding: 20px 0;
 }
 
 .contact-info {
@@ -561,7 +541,6 @@ footer {
   color: #0B77BA;
   line-height: 30px;
 }
-
 
 .contact-info h4 {
   font-family: Roboto;
@@ -597,10 +576,10 @@ footer {
   .footer-banner {
     width: 100%;
     height: 400px;
-    background-image: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,0.2) 80%, rgba(255,255,255,0) 100%), url('img/footer-image.jpg');
-    background-image: -moz-linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,0.2) 80%, rgba(255,255,255,0) 100%), url('img/footer-image.jpg');
-    background-image: -webkit-linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,0.2) 80%, rgba(255,255,255,0) 100%), url('img/footer-image.jpg');
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 );
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.2) 80%, rgba(255, 255, 255, 0) 100%), url('img/footer-image.jpg');
+    background-image: -moz-linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.2) 80%, rgba(255, 255, 255, 0) 100%), url('img/footer-image.jpg');
+    background-image: -webkit-linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.2) 80%, rgba(255, 255, 255, 0) 100%), url('img/footer-image.jpg');
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#00ffffff', GradientType=0);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
