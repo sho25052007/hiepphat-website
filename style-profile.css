@@ -1,0 +1,702 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 0;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+/*MY CODE*/
+* {
+  text-decoration: none;
+}
+
+header {
+  width: 100%;
+  background-color: #fff;
+}
+
+header .header-brand {
+  width: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+}
+
+#logo {
+  width: 95px;
+  margin: 0 auto;
+  /* align-items: center; */
+  padding: 10px 0;
+}
+
+#text {
+  width: 225px;
+  margin: 0 auto;
+  /* align-items: center; */
+  padding: 10px 20px;
+}
+
+.sticky-nav {
+  background-color: #fff;
+  box-shadow: 0px 3px 6px #fff;
+  height: 30px;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 99;
+}
+
+nav ul {
+  padding-top: 10px;
+  display: block;
+  margin: 10px auto;
+  width: fit-content;
+}
+
+nav ul li {
+  display: inline-block;
+  float: left;
+  list-style: none;
+  position: relative;
+}
+
+nav ul li ul {
+  display: none;
+}
+
+nav ul li a {
+  padding: 7px 16px;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 600;
+  color: #0B77BA;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: block;
+}
+
+#down-arrow {
+  display: none;
+}
+
+@media only screen and (min-width: 1000px) {
+  main {
+    padding-top: 78px;
+    padding-bottom: 120px;
+  }
+
+  .wrapper {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  header {
+    position: fixed;
+    height: 78px;
+    box-shadow: 0px 3px 6px #fff;
+    z-index: 99;
+  }
+
+  header .header-brand {
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    width: 60%;
+    position: absolute;
+  }
+
+  .logo-header .header-brand {
+    float: left;
+  }
+
+  #logo {
+    width: 50px;
+    padding: 10px 0 10px 40px;
+    margin: 0;
+    float: left;
+  }
+
+  #text {
+    height: 40px;
+    padding: 20px 20px;
+    margin: 0;
+    float: left;
+  }
+
+  .sticky-nav {
+    width: 100%;
+    position: fixed;
+    height: 0;
+    box-shadow: 0;
+    float: right;
+    margin-top: 7px;
+    z-index: 99;
+  }
+
+  nav ul {
+    padding-right: 10%;
+    margin: 22px auto;
+    padding-top: 0;
+    float: right;
+    display: inline-block;
+  }
+
+  nav ul li {
+    position: relative;
+    padding: 0 25px;
+  }
+
+  nav ul li a {
+    padding: 5px 5px 0;
+    display: table;
+    border: 1px solid #F6ED24;
+    border-spacing: 5px;
+  }
+
+  nav ul li ul {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 0px 0px 4px 4px;
+    display: block;
+    margin: 0;
+    /* hover effect for website*/
+    height: 0px;
+    overflow: hidden;
+    transition: height 0.5s ease-in-out;
+    -webkit-transition: height 0.5s ease-in-out;
+    -moz-transition: height 0.5s ease-in-out;
+    -o-transition: height 0.5s ease-in-out;
+  }
+
+  nav ul li:hover ul {
+    display: block;
+    height: 115px;
+    padding-top: 20px;
+  }
+
+  nav ul li ul li {
+    width: 120px;
+    border-radius: 4px;
+  }
+
+  nav ul li ul li a {
+    padding: 10px 0;
+    border: none;
+  }
+
+  nav ul li ul li:hover a {
+    text-decoration: underline;
+  }
+
+  #down-arrow {
+    display: block;
+    width: 20px;
+    margin: 6px auto;
+  }
+}
+
+/* PROFILE PAGE */
+
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+}
+
+.videoWrapper video {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: auto;
+}
+
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.page-title {
+  font-family: Garamond;
+  font-size: 22px;
+  font-weight: 600;
+  color: #0B77BA;
+  font-style: italic;
+  text-align: left;
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
+
+.page-line {
+  border-bottom: 1px solid #F6ED24;
+  display: block;
+}
+
+.logo-est {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.logo-text {
+  width: 50%;
+  margin: 30px;
+}
+
+.logo-img {
+  display: none;
+}
+
+.est-date {
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 600;
+  color: #0B77BA;
+  margin: 0 10px 30px;
+  text-align: center;
+  flex-basis: 100%;
+}
+
+.director-name, .employee-info, .capital-info {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.production-info, .technology-info {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.name, .employee, .capital {
+  font-family: Garamond;
+  font-size: 14px;
+  font-weight: 600;
+  color: #0B77BA;
+  text-align: left;
+  margin: 10px;
+}
+
+.production, .technology {
+  font-family: Garamond;
+  font-size: 14px;
+  font-weight: 600;
+  color: #0B77BA;
+  text-align: left;
+  margin: 12px 10px;
+  align-self: flex-start;
+}
+
+.vertical-line {
+  display: block;
+  border-left: 1px solid #F6ED24;
+  margin: 0 5px;
+  height: 20px;
+  width: 1px;
+}
+
+.vertical-line-prod {
+  display: block;
+  border-left: 1px solid #F6ED24;
+  margin: 0 8px;
+  height: 80px;
+  width: 1px;
+}
+
+.vertical-line-tech {
+  display: block;
+  border-left: 1px solid #F6ED24;
+  margin: 0 5px;
+  height: 180px;
+  width: 1px;
+}
+
+.position-title, .employee-no, .capital-amount {
+  font-family: Roboto;
+  font-size: 10px;
+  font-weight: 600;
+  color: #0B77BA;
+  text-align: left;
+  margin: 10px;
+}
+
+.date, .currency {
+  align-items: center;
+  font-family: Roboto;
+  font-size: 8px;
+  font-weight: 300;
+  color: #0B77BA;
+  text-align: left;
+  margin-right: 10px;
+}
+
+.machines li {
+  font-family: Roboto;
+  list-style: none;
+  font-size: 8px;
+  font-weight: 600;
+  color: #0B77BA;
+  text-align: left;
+  margin: 14px 8px;
+}
+
+.machine-list {
+  padding-top: 40px;
+  padding-bottom: 100px;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 700px) {
+  .page-title {
+    font-size: 24px;
+    margin-top: 140px;
+    margin-bottom: 30px;
+  }
+
+  .logo-est {
+    margin-top: 40px;
+  }
+
+  .logo-text {
+    width: 60%;
+  }
+
+  .est-date {
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+
+  .director-name, .employee-info, .capital-info {
+    margin-bottom: 20px;
+  }
+
+  .production-info, .technology-info {
+    justify-content: flex-start;
+    padding-bottom: 20px;
+    margin: 0 5vw;
+  }
+
+  .name, .employee, .capital {
+    font-size: 18px;
+    margin: 20px;
+  }
+
+  .production, .technology {
+    font-size: 18px;
+    margin: 22px 10px;
+  }
+
+  .vertical-line {
+    height: 20px;
+  }
+
+  .vertical-line-prod {
+    margin: 0 8px;
+    height: 126px;
+  }
+
+  .vertical-line-tech {
+    margin: 0 5px;
+    height: 300px;
+  }
+
+  .position-title, .employee-no, .capital-amount {
+    font-size: 14px;
+    margin: 10px;
+  }
+
+  .date, .currency {
+    font-size: 12px;
+    margin-right: 10px;
+  }
+
+  .machines li {
+    font-size: 14px;
+    margin: 24px 8px;
+
+  }
+
+  .machine-list {
+    padding-top: 60px;
+    padding-bottom: 160px;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+
+  .videoWrapper video {
+    margin-left: 10%;
+    width: 80%;
+  }
+
+  .page-title {
+    font-size: 34px;
+    margin-top: 0px;
+  }
+
+  .logo-img {
+    display: block;
+    width: 20%;
+    padding: 20px 450px;
+  }
+
+  .logo-text {
+    width: 30%;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 40px;
+  }
+
+  .est-date {
+    font-size: 22px;
+    margin-bottom: 80px;
+    margin-top: 10px;
+  }
+
+  .director-name, .employee-info, .capital-info {
+    margin-bottom: 30px;
+  }
+
+  .production-info, .technology-info {
+    margin-bottom: 20px;
+    margin: 0 20vw;
+  }
+
+  .name {
+    font-size: 24px;
+  }
+
+  .employee, .capital {
+    font-size: 20px;
+  }
+
+  .production, .technology {
+    font-size: 22px;
+    margin: 40px 10px;
+  }
+
+  .vertical-line {
+    height: 30px;
+  }
+
+  .vertical-line-prod {
+    margin: 0 16px;
+    height: 260px;
+  }
+
+  .vertical-line-tech {
+    margin: 0 10px;
+    height: 630px;
+  }
+
+  .position-title, .employee-no, .capital-amount {
+    font-size: 20px;
+    margin: 10px;
+  }
+
+  .date, .currency {
+    font-size: 14px;
+    margin-right: 10px;
+  }
+
+  .machines li {
+    font-size: 16px;
+    line-height: 20px;
+    margin: 32px 10px;
+  }
+
+  .machine-list {
+    padding-top: 80px;
+    padding-bottom: 100px;
+  }
+}
+
+
+/* PRODUCT PAGE FOOTER */
+.footer-line {
+  border-bottom: 1px solid #F6ED24;
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+  margin-top: 20px;
+}
+
+footer {
+  width: 100%;
+  background-color: #fff;
+  /* display: block; */
+}
+
+.quick-contact-footer {
+  padding: 20px 0;
+}
+
+.contact-info {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  align-items: flex-start;
+  padding: 0 15%;
+}
+
+.contact-info h3 {
+  padding-bottom: 5px;
+  font-family: Garamond;
+  font-size: 24px;
+  font-weight: 300;
+  color: #0B77BA;
+  line-height: 30px;
+}
+
+.contact-info h4 {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  color: #0B77BA;
+  line-height: 30px;
+  flex-basis: 20%;
+}
+
+.contact-info p {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 300;
+  color: #0B77BA;
+  line-height: 30px;
+  flex-shrink: 1;
+}
+
+.footer-banner {
+  display: none;
+}
+
+@media only screen and (min-width: 700px) {
+  .quick-contact-footer {
+    padding: 20px 200px;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .footer-line {
+    display: none;
+  }
+
+  .contact-info {
+    display: none;
+  }
+
+  .profile-footer {
+    width: 100%;
+    height: 400px;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.2) 80%, rgba(255, 255, 255, 0) 100%), url('img/profile-footer.jpg');
+    background-image: -moz-linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.2) 80%, rgba(255, 255, 255, 0) 100%), url('img/profile-footer.jpg');
+    background-image: -webkit-linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.2) 80%, rgba(255, 255, 255, 0) 100%), url('img/profile-footer.jpg');
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#00ffffff', GradientType=0);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: block;
+  }
+}
