@@ -361,14 +361,6 @@ nav ul li a {
   margin-bottom: 20px;
 }
 
-.production-info, .technology-info {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: flex-start;
-  align-items: center;
-  padding-bottom: 20px;
-}
-
 .name, .employee, .capital {
   font-family: Garamond;
   font-size: 14px;
@@ -378,37 +370,11 @@ nav ul li a {
   margin: 10px;
 }
 
-.production, .technology {
-  font-family: Garamond;
-  font-size: 14px;
-  font-weight: 600;
-  color: #0B77BA;
-  text-align: left;
-  margin: 12px 10px;
-  align-self: flex-start;
-}
-
 .vertical-line {
   display: block;
   border-left: 1px solid #F6ED24;
   margin: 0 5px;
   height: 20px;
-  width: 1px;
-}
-
-.vertical-line-prod {
-  display: block;
-  border-left: 1px solid #F6ED24;
-  margin: 0 8px;
-  height: 80px;
-  width: 1px;
-}
-
-.vertical-line-tech {
-  display: block;
-  border-left: 1px solid #F6ED24;
-  margin: 0 5px;
-  height: 180px;
   width: 1px;
 }
 
@@ -431,186 +397,252 @@ nav ul li a {
   margin-right: 10px;
 }
 
+
+
+
+
+.production-info, .technology-info {
+  display: grid;
+  grid-template-columns: 80px 20px 200px;
+  grid-template-rows: auto;
+
+  padding-bottom: 60px;
+  margin: auto;
+}
+
+.production, .technology {
+  font-family: Garamond;
+  font-size: 14px;
+  font-weight: 600;
+  color: #0B77BA;
+  /* text-align: left; */
+  margin: 20px 10px 0;
+  justify-self: end;
+  align-self: start;
+}
+
+.vertical-line-prod {
+  display: block;
+  border-left: 1px solid #F6ED24;
+  width: 1px;
+  margin: 0 8px;
+  height: 170px;
+  align-self: start;
+}
+
+.vertical-line-tech {
+  display: block;
+  border-left: 1px solid #F6ED24;
+  width: 1px;
+  margin: 0 8px;
+  height: 360px;
+  align-self: start;
+}
+
 .machines li {
   font-family: Roboto;
   list-style: none;
   font-size: 8px;
   font-weight: 600;
   color: #0B77BA;
-  text-align: left;
-  margin: 14px 8px;
+  /* text-align: left; */
+  margin: 16px 0px 16px 10px;
+  line-height: 12px;
+  justify-self: start;
+  align-self: start;
 }
 
 .machine-list {
   padding-top: 40px;
-  padding-bottom: 100px;
+  padding-bottom: 20px;
+
+  width: 300px;
+  height: auto;
   margin: 0 auto;
+  position: relative;
 }
 
-@media only screen and (min-width: 700px) {
+
+@media only screen and (min-width: 600px) {
+
   .page-title {
-    font-size: 24px;
-    margin-top: 140px;
-    margin-bottom: 30px;
-  }
-
-  .logo-est {
-    margin-top: 40px;
-  }
-
-  .logo-text {
-    width: 60%;
-  }
-
-  .est-date {
-    font-size: 16px;
-    margin-bottom: 40px;
-  }
-
-  .director-name, .employee-info, .capital-info {
+    font-size: 26px;
+    margin-top: 100px;
     margin-bottom: 20px;
   }
 
-  .production-info, .technology-info {
-    justify-content: flex-start;
-    padding-bottom: 20px;
-    margin: 0 5vw;
+  .logo-est {
+    margin-top: 10px;
+  }
+
+  .logo-text {
+    width: 50%;
+    margin: 60px 0 40px;
+  }
+
+  .est-date {
+    font-size: 14px;
+    margin: 0 10px 60px;
+  }
+
+  .director-name, .employee-info, .capital-info {
+    margin-bottom: 40px;
   }
 
   .name, .employee, .capital {
     font-size: 18px;
-    margin: 20px;
+    margin: 10px;
+  }
+
+  .vertical-line {
+    margin: 0 5px;
+    height: 20px;
+  }
+
+  .position-title, .employee-no, .capital-amount {
+    font-size: 12px;
+    margin: 10px;
+  }
+
+  .date, .currency {
+    font-size: 10px;
+    margin-right: 10px;
+  }
+
+
+
+
+
+  .production-info, .technology-info {
+    grid-template-columns: 100px 20px 280px;
+
+    padding-bottom: 60px;
   }
 
   .production, .technology {
     font-size: 18px;
-    margin: 22px 10px;
-  }
-
-  .vertical-line {
-    height: 20px;
+    margin: 24px 10px 0;
   }
 
   .vertical-line-prod {
     margin: 0 8px;
-    height: 126px;
+    height: 205px;
   }
 
   .vertical-line-tech {
-    margin: 0 5px;
-    height: 300px;
+    margin: 0 8px;
+    height: 440px;
   }
 
-  .position-title, .employee-no, .capital-amount {
-    font-size: 14px;
-    margin: 10px;
-  }
-
-  .date, .currency {
+  .machines li {
     font-size: 12px;
-    margin-right: 10px;
-  }
-
-  .machines li {
-    font-size: 14px;
-    margin: 24px 8px;
+    margin: 16px 0px 16px 10px;
+    line-height: 18px;
   }
 
   .machine-list {
-    padding-top: 60px;
-    padding-bottom: 160px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+
+    width: 360px;
   }
 }
 
-@media only screen and (min-width: 1000px) {
-  .videoWrapper video {
-    margin-left: 10%;
-    width: 80%;
-  }
+  @media only screen and (min-width: 1000px) {
 
-  .page-title {
-    font-size: 34px;
-    margin-top: 0px;
-  }
 
-  .logo-img {
-    display: block;
-    width: 20%;
-    padding: 20px 450px;
-  }
 
-  .logo-text {
-    width: 30%;
-    margin: 0;
-    padding-top: 10px;
-    padding-bottom: 40px;
-  }
+    .page-title {
+      font-size: 34px;
+      margin-top: 100px;
+      margin-bottom: 20px;
+    }
 
-  .est-date {
-    font-size: 22px;
-    margin-bottom: 80px;
-    margin-top: 10px;
-  }
+    .logo-est {
+      margin-top: 10px;
+    }
 
-  .director-name, .employee-info, .capital-info {
-    margin-bottom: 30px;
-  }
+    .logo-img {
+      display: block;
+      width: 20%;
+      margin: 60px 40% 0px;
+      height: auto;
+    }
 
-  .production-info, .technology-info {
-    margin-bottom: 20px;
-    margin: 0 20vw;
-  }
+    .logo-text {
+      width: 40%;
+      margin: 40px 0 80px;
+    }
 
-  .name {
-    font-size: 24px;
-  }
+    .est-date {
+      font-size: 22px;
+      margin: 0 10px 100px;
+    }
 
-  .employee, .capital {
-    font-size: 20px;
-  }
+    .director-name, .employee-info, .capital-info {
+      margin-bottom: 60px;
+    }
 
-  .production, .technology {
-    font-size: 22px;
-    margin: 40px 10px;
-  }
+    .name, .employee, .capital {
+      font-size: 26px;
+      margin: 10px;
+    }
 
-  .vertical-line {
-    height: 30px;
-  }
+    .vertical-line {
+      margin: 0 5px;
+      height: 30px;
+    }
 
-  .vertical-line-prod {
-    margin: 0 16px;
-    height: 260px;
-  }
+    .position-title, .employee-no, .capital-amount {
+      font-size: 24px;
+      margin: 10px;
+    }
 
-  .vertical-line-tech {
-    margin: 0 10px;
-    height: 630px;
-  }
+    .date, .currency {
+      font-size: 14px;
+      margin-right: 10px;
+    }
 
-  .position-title, .employee-no, .capital-amount {
-    font-size: 20px;
-    margin: 10px;
-  }
 
-  .date, .currency {
-    font-size: 14px;
-    margin-right: 10px;
-  }
 
-  .machines li {
-    font-size: 16px;
-    line-height: 20px;
-    margin: 32px 10px;
-  }
 
-  .machine-list {
-    padding-top: 80px;
-    padding-bottom: 100px;
-  }
+
+    .production-info, .technology-info {
+      grid-template-columns: 140px 20px 440px;
+
+      padding-bottom: 60px;
+    }
+
+    .production, .technology {
+      font-size: 24px;
+      margin: 22px 10px 0;
+    }
+
+    .vertical-line-prod {
+      margin: 0 8px;
+      height: 290px;
+    }
+
+    .vertical-line-tech {
+      margin: 0 8px;
+      height: 710px;
+    }
+
+    .machines li {
+      font-size: 16px;
+      margin: 14px 0px 40px 10px;
+      line-height: 20px;
+    }
+
+    .machine-list {
+      padding-top: 100px;
+      padding-bottom: 0;
+
+      width: 600px;
+    }
 }
 
-/* PRODUCT PAGE FOOTER */
+/* PROFILE PAGE FOOTER */
 .footer-line {
   border-bottom: 1px solid #F6ED24;
   display: block;
@@ -627,15 +659,18 @@ footer {
 
 .quick-contact-footer {
   padding: 20px 0;
+  width: 240px;
+  height: auto;
+  margin: 0 auto;
+  position: relative;
 }
 
 .contact-info {
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-start;
-  align-content: flex-start;
-  align-items: flex-start;
-  padding: 0 15%;
+  align-content: center;
+  align-items: center;
 }
 
 .contact-info h3 {
@@ -664,6 +699,7 @@ footer {
   line-height: 30px;
   flex-shrink: 1;
   text-decoration: none;
+  padding-left: 20px;
 }
 
 .footer-banner {

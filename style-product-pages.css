@@ -818,11 +818,14 @@ nav ul li a {
 footer {
   width: 100%;
   background-color: #fff;
-  /* display: block; */
 }
 
 .quick-contact-footer {
   padding: 20px 0;
+  width: 240px;
+  height: auto;
+  margin: 0 auto;
+  position: relative;
 }
 
 .contact-info {
@@ -831,7 +834,6 @@ footer {
   justify-content: flex-start;
   align-content: flex-start;
   align-items: flex-start;
-  padding: 0 15%;
 }
 
 .contact-info h3 {
@@ -860,6 +862,7 @@ footer {
   line-height: 30px;
   flex-shrink: 1;
   text-decoration: none;
+  padding-left: 20px;
 }
 
 .footer-banner {
