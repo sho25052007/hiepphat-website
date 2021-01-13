@@ -551,13 +551,14 @@ footer {
   flex-basis: 20%;
 }
 
-.contact-info p {
+.contact-info a {
   font-family: Roboto;
   font-size: 14px;
   font-weight: 300;
   color: #0B77BA;
   line-height: 30px;
   flex-shrink: 1;
+  text-decoration: none;
 }
 
 .footer-banner {

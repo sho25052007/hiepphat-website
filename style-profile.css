@@ -291,10 +291,10 @@ nav ul li a {
 }
 
 /* PROFILE PAGE */
-
 .videoWrapper {
   position: relative;
-  padding-bottom: 56.25%; /* 16:9 */
+  padding-bottom: 56.25%;
+  /* 16:9 */
   height: 0;
 }
 
@@ -514,7 +514,6 @@ nav ul li a {
   .machines li {
     font-size: 14px;
     margin: 24px 8px;
-
   }
 
   .machine-list {
@@ -524,7 +523,6 @@ nav ul li a {
 }
 
 @media only screen and (min-width: 1000px) {
-
   .videoWrapper video {
     margin-left: 10%;
     width: 80%;
@@ -612,7 +610,6 @@ nav ul li a {
   }
 }
 
-
 /* PRODUCT PAGE FOOTER */
 .footer-line {
   border-bottom: 1px solid #F6ED24;
@@ -659,13 +656,14 @@ footer {
   flex-basis: 20%;
 }
 
-.contact-info p {
+.contact-info a {
   font-family: Roboto;
   font-size: 14px;
   font-weight: 300;
   color: #0B77BA;
   line-height: 30px;
   flex-shrink: 1;
+  text-decoration: none;
 }
 
 .footer-banner {
