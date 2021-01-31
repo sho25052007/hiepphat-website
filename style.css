@@ -217,7 +217,6 @@ nav ul li a {
     width: 100%;
     position: fixed;
     height: 0;
-    box-shadow: 0;
     float: right;
     margin-top: 7px;
     z-index: 99;
@@ -286,19 +285,27 @@ nav ul li a {
 }
 
 /* INDEX*/
+
 .index-banner {
   width: 100%;
   height: 150px;
-  background-image: url('img/banner.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  display: table;
+  position: relative;
 }
 
+.banner-image {
+  width: 100%;
+  height: 100%;
+}
+
+
 .vertical-center {
-  display: table-cell;
-  vertical-align: middle;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding-top: 40px;
 }
 
 .vertical-center h1 {
@@ -314,12 +321,12 @@ nav ul li a {
 
 .vertical-center h2 {
   font-family: Garamond;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 300;
   color: #F6ED24;
   text-align: center;
-  line-height: 20px;
-  margin-top: 30px;
+  line-height: 18px;
+  margin-top: 20px;
   text-shadow: 1px 1px 1px #000;
 }
 
@@ -331,13 +338,14 @@ nav ul li a {
   text-align: center;
   line-height: 20px;
   text-shadow: 1px 1px 0.5px #000;
+  padding-top: 5px;
 }
 
 .instruction p {
   font-family: Roboto;
   font-size: 12px;
   font-weight: 400;
-  text-style: italic;
+  font-style: italic;
   line-height: 5px;
   margin-top: 10px;
   color: #0B77BA;
@@ -392,6 +400,32 @@ nav ul li a {
 }
 
 @media only screen and (min-width: 500px) {
+
+  .index-banner {
+    height: 260px;
+  }
+
+  .vertical-center {
+    padding-top: 80px;
+    width: 70%;
+  }
+
+  .vertical-center h1 {
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .vertical-center h2 {
+    font-size: 18px;
+    line-height: 22px;
+    margin-top: 50px;
+  }
+
+  .vertical-center h4 {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
   .product-link {
     height: 200px;
   }
@@ -405,26 +439,27 @@ nav ul li a {
 
   .index-banner {
     height: 400px;
-    background-attachment: fixed;
-    background-position: 0 -100px;
+  }
+
+  .vertical-center {
+    padding-top: 140px;
+    width: 70%;
   }
 
   .vertical-center h1 {
-    font-size: 32px;
-    line-height: 46px;
-    padding: 0 200px;
+    font-size: 34px;
+    line-height: 52px;
   }
 
   .vertical-center h2 {
     font-size: 24px;
-    line-height: 30px;
-    margin-top: 80px;
+    line-height: 36px;
+    margin-top: 60px;
   }
 
   .vertical-center h4 {
-    font-size: 16px;
-    line-height: 22px;
-    margin-top: 40px;
+    font-size: 18px;
+    line-height: 20px;
   }
 
   .instruction p {
@@ -510,7 +545,7 @@ nav ul li a {
   border-bottom: 1px solid #F6ED24;
   display: block;
   margin: 0 auto;
-  width: 80%;
+  width: 90%;
   margin-top: 20px;
 }
 

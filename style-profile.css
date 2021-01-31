@@ -222,7 +222,6 @@ nav ul li a {
     width: 100%;
     position: fixed;
     height: 0;
-    box-shadow: 0;
     float: right;
     margin-top: 7px;
     z-index: 99;
@@ -303,6 +302,8 @@ nav ul li a {
   top: 0;
   width: 100%;
   height: auto;
+  display: block;
+  margin: 0;
 }
 
 .wrapper {

@@ -222,7 +222,6 @@ nav ul li a {
     width: 100%;
     position: fixed;
     height: 0;
-    box-shadow: 0;
     float: right;
     margin-top: 7px;
     z-index: 99;
@@ -325,7 +324,7 @@ nav ul li a {
   color: #0B77BA;
   text-align: center;
   line-height: 20px;
-  text-shadow: 2px 2px 1px #d3d3d3;
+  /* text-shadow: 2px 2px 1px #d3d3d3; */
 }
 
 .contact-link-h4 {
@@ -335,7 +334,7 @@ nav ul li a {
   color: #0B77BA;
   text-align: center;
   line-height: 20px;
-  text-shadow: 1px 2px 2px #d3d3d3;
+  /* text-shadow: 1px 2px 2px #d3d3d3; */
   margin-top: 20px;
 }
 
@@ -348,7 +347,7 @@ nav ul li a {
   font-family: Roboto;
   font-size: 12px;
   font-weight: 400;
-  text-style: italic;
+  font-style: italic;
   line-height: 5px;
   color: #0B77BA;
   text-align: center;
@@ -661,7 +660,7 @@ nav ul li a {
 
 .lightbox:target .main-img {
   opacity: 1;
-  webkit-transition: opacity 0.6s;
+  -webkit-transition: opacity 0.6s;
   transition: opacity 0.6s;
 }
 
