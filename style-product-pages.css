@@ -356,10 +356,10 @@ nav ul li a {
 
 .product-type {
   font-family: Roboto;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 300;
   text-decoration: underline;
-  line-height: 5px;
+  line-height: 20px;
   color: #0B77BA;
   text-align: left;
   display: block;

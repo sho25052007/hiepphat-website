@@ -319,7 +319,8 @@ nav ul li a {
 
 .contact-phrase {
   font-family: Roboto;
-  font-size: 12px;
+  font-size: 18px;
+  line-height: 20px;
   font-weight: 600;
   color: #0B77BA;
   margin: 40px 10px 130px;
@@ -329,7 +330,8 @@ nav ul li a {
 
 .title {
   font-family: Garamond;
-  font-size: 18px;
+  font-size: 16px;
+  line-height: 20px;
   font-weight: 600;
   color: #0B77BA;
   text-align: right;
@@ -337,7 +339,8 @@ nav ul li a {
 
 .detail {
   font-family: Roboto;
-  font-size: 16px;
+  font-size: 12px;
+  line-height: 20px;
   font-weight: 600;
   color: #0B77BA;
   text-align: left;
@@ -368,7 +371,6 @@ nav ul li a {
 
 .location-sub {
   line-height: 20px;
-  margin-top: -10px;
   grid-area: detail3;
 }
 
