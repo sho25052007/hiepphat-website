@@ -424,6 +424,7 @@ nav ul li a {
   /* CHILD GRID */
   .location-sub {
     line-height: 44px;
+    margin-top: -10px;
   }
 
   /* PARENT GRID */
